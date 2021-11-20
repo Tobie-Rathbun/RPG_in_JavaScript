@@ -1,0 +1,42 @@
+/*variable defining*/
+:root {	/*selects all*/
+	--brown: #B38540;
+	--green: #8FFFB4;
+	--yellow: #FFC875;
+	--purple: #AD5CFF;
+	--shadow: #7E49B3;
+}
+
+
+body {
+	background-color: var(--yellow);
+}
+
+
+/*nav bar styling*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	margin-right: 150px;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--shadow);
+	width: 30%;				/*nav bar width*/
+	float: right;
+}
+/*float method of arranging nav horizontally*/
+li {
+	float: left;
+	width: 25%;				/*nav bar item width*/
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px;			/*nav bar height modifier*/
+	text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: var(--purple);
+}
