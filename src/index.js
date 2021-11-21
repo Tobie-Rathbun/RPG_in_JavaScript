@@ -20,6 +20,10 @@ export const POSITION = { x: 0, y: 0 };
 const skeleton = new Image();
 skeleton.src = "../public/favicon.png";
 
+//create berry texture
+const berry = new Image();
+berry.src = "../img/berry.png";
+
 // triangle wave modulator to invert "ZIG" after every 200 frames
 const triangleModulation = () => {
   if (!(FRAMECOUNT % 200)) {
@@ -45,8 +49,13 @@ const drawGradient = () => {
 };
 
 // draw skeleton texture to canvas with the position being set by mouse movement
-const drawSkeleton = () => {
-  ctx.drawImage(skeleton, POSITION.x, POSITION.y);
+//const drawSkeleton = () => {
+//  ctx.drawImage(skeleton, POSITION.x, POSITION.y);
+//};
+
+// draw berry texture to canvas with the position being set by mouse movement
+const drawBerry = () => {
+  ctx.drawImage(berry, POSITION.x, POSITION.y);
 };
 
 // The Animation Loop
