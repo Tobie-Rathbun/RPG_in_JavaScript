@@ -1,43 +1,21 @@
-<!--Created by Tobie Rathbun-->
-<!doctype html>
+<!--Created by Tobie Rathbun, literally the coolest and smartest person ever-->
+<!DOCTYPE html>
 <html lang="en">
-	
-	
-<head>
-<!-- standard head content-->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--the pixel width of the viewport that you want the website to be rendered 
-		also the size ratio 0 to 10 where 1 is 1:1-->
-	<title>A Basic HTML5 Template</title>
-	<meta name="description" content="A simple HTML5 Template for new projects.">
-	<meta name="author" content="SEO words">
-
-<!--open graph-->
-	<meta property="og:title" content="A Basic HTML5 Template">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-	<meta property="og:description" content="A simple HTML5 Template for new projects.">
-	<meta property="og:image" content="image.png">
-<!--favicons-->
-	<link rel="icon" href="/favicon.ico">
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<!-- style sheet -->
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-
-
-<body>
-<header>
-	<ul>
-	  <li><a href="home.html">Home</a></li>
-	  <li><a href="play.html">Play Now</a></li>
-	  <li><a href="about.html">About</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-	</ul>
-</header>
-<!-- java script -->
-	<!-- to be placed at the bottom for load times -->
-	<script src="helloWorld.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web RPG</title>
+    <meta name="Web RPG" content="A fun, collaborative project." />
+    <link rel="icon" href="public/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <!-- have body fill up entire screen, and hide the cursor so that we can use a graphic instead -->
+  <body style="margin: 0; cursor: none">
+    <canvas id="canvas"
+      >Your browser doesn't support HTML Canvas lol embarrassing</canvas
+    >
+    <!-- declare script tags with "module" type so import/export statements can be used -->
+    <script src="src/index.js" type="module"></script>
+    <script src="src/listeners.js" type="module"></script>
+  </body>
+</html>
