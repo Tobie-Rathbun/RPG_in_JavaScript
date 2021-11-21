@@ -17,8 +17,8 @@ let ZIG = false;
 export const POSITION = { x: 0, y: 0 };
 
 // create skeleton texture
-const skeleton = new Image();
-skeleton.src = "../public/favicon.png";
+//const skeleton = new Image();
+//skeleton.src = "../public/favicon.png";
 
 //create berry texture
 const berry = new Image();
@@ -66,6 +66,8 @@ const animate = () => {
   drawBerry();
   // this is a special Web API that attempts to recursively call the function passed to it
   // every 1/60 second
+  console.log(POSITION.x, POSITION.y);
+    //logs position coordinates each frame
   requestAnimationFrame(animate);
 };
 
