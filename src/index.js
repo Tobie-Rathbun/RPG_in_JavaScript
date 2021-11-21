@@ -63,7 +63,7 @@ const animate = () => {
   FRAMECOUNT += 1;
   triangleModulation();
   drawGradient();
-  drawSkeleton();
+  drawBerry();
   // this is a special Web API that attempts to recursively call the function passed to it
   // every 1/60 second
   requestAnimationFrame(animate);
