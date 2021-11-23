@@ -76,7 +76,6 @@ const animate = () => {
   requestAnimationFrame(animate);
 };
 
-console.log(FRAMECOUNT);
 console.log(ZIG);
 
 // kick off the animation loop
