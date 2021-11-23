@@ -1,3 +1,7 @@
+// polyfill for requestAnimationFrame API
+var requestAnimationFrame =
+  requestAnimationFrame || window.requestAnimationFrame;
+
 // get canvas API from HTML DOM
 const canvas = document.getElementById("canvas");
 
