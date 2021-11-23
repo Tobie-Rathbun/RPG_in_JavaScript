@@ -76,5 +76,7 @@ const animate = () => {
   requestAnimationFrame(animate);
 };
 
+console.log(FRAMECOUNT)
+
 // kick off the animation loop
 animate();
