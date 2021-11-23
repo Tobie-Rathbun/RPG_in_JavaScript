@@ -27,6 +27,8 @@ export const POSITION = { x: 0, y: 0 };
 //create berry texture
 const berry = new Image();
 berry.src = "../img/berry.png";
+berry.style.width = "10px";
+berry.style.height = "10px";
 
 // triangle wave modulator to invert "ZIG" after every 200 frames
 const triangleModulation = () => {
@@ -59,7 +61,7 @@ const drawGradient = () => {
 
 // draw berry texture to canvas with the position being set by mouse movement
 const drawBerry = () => {
-  ctx.drawImage(berry, POSITION.x, POSITION.y);
+  ctx.drawImage(berry, POSITION.x - 64, POSITION.y - 190, 128, 128);
 };
 
 // The Animation Loop
@@ -70,8 +72,7 @@ const animate = () => {
   drawBerry();
   // this is a special Web API that attempts to recursively call the function passed to it
   // every 1/60 second
-  console.log(POSITION.x, POSITION.y);
-    //logs position coordinates each frame
+  //logs position coordinates each frame
   requestAnimationFrame(animate);
 };
 
